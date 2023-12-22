@@ -1,0 +1,14 @@
+<svg width="61.154" height="61.153" viewBox="0 0 16.18 16.18" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath clipPathUnits="userSpaceOnUse" id="a">
+            <path style="fill:#fff;stroke-width:.257235" class="powerclip"
+                d="M-92.505 42.397h20v26.18h-20zm15 13.09a5 5 0 0 0-5-5 5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5z" />
+        </clipPath>
+    </defs>
+    <path style="fill:#008bc7;fill-opacity:1;stroke-width:.327208" transform="rotate(-90 -60.896 -13.497)"
+        clip-path="url(#a)"
+        d="M-77.505 55.487a5 8.09 0 0 1-5 8.09 5 8.09 0 0 1-5-8.09 5 8.09 0 0 1 5-8.09 5 8.09 0 0 1 5 8.09z" />
+    <path
+        d="M37.671 210.87h4.822s-2.135 3.1-2.18 8.09c-.047 4.99 2.169 8.09 2.169 8.09h-4.846s2.215-3.1 2.192-8.086c-.022-4.987-2.157-8.095-2.157-8.095z"
+        style="fill:#008bc7;fill-opacity:1;stroke-width:.12996" transform="translate(-31.976 -210.869)" />
+</svg>

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "CormorantGaramond";
+    src: url("/fonts/CormorantGaramond-Regular.ttf") format("woff2");
+}
+
+@layer components {
+    .btn {
+        @apply rounded-lg bg-gradient-to-r from-sky-600 via-sky-700 to-sky-600 p-2 text-center uppercase text-white shadow-inner shadow-cyan-300
+         hover:shadow-md hover:shadow-white  active:scale-90 active:transition-transform;
+    }
+
+    .card {
+        @apply flex flex-col items-center justify-center gap-y-2 rounded-lg bg-sky-300/55 px-2 py-4 text-center shadow-sm shadow-gray-600;
+    }
+}
+
+@layer utilities {
+    .bg-fondo {
+        @apply bg-gradient-to-r from-sky-700 from-10% via-sky-200 via-50% to-sky-700 to-90%;
+    }
+}

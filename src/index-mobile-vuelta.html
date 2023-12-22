@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SalusApp</title>
+        <link rel="stylesheet" href="../dist/style.css" />
+    </head>
+
+    <body>
+        <div class="flex h-screen select-none flex-col items-center border-2 px-2">
+            <!-- Título -->
+            <section class="mt-0 flex h-[15%] w-full flex-row items-center justify-center border-2">
+                <img src="logo-app.svg" alt="" class="mr-3 h-[100%]" />
+                <h1 class="text-center font-marca text-2xl font-medium text-[#008BC7]">SALUS APP</h1>
+            </section>
+            <!-- Tarjetas -->
+            <section class="flex h-[50%] w-full flex-row items-center justify-center gap-x-4 border-2 px-4">
+                <article class="bg-base-200 flex flex-col items-center justify-center border-2 p-2 font-semibold">
+                    <p class="mb-3 text-center text-sm">Soy paciente y necesito un turno con un profesional de la salud.</p>
+                    <button class="btn btn-info btn-sm text-info-content w-3/4">SOLICITAR TURNO</button>
+                </article>
+                <article class="bg-base-200 flex flex-col items-center justify-center border-2 p-2 font-semibold">
+                    <p class="mb-3 text-center text-sm">Soy profesional de la salud y quiero conocer o unirme al servicio.</p>
+                    <button class="btn btn-info btn-sm text-info-content w-3/4">CONOCER EL SERVICIO</button>
+                </article>
+            </section>
+            <!-- Registro -->
+            <section class="flex h-[30%] w-full flex-row items-center justify-center gap-x-4 border-2 px-4">
+                <article class="flex w-full flex-col items-center justify-center border-2">
+                    <p class="mb-2 text-sm">Profesional o paciente:</p>
+                    <button class="btn btn-primary btn-sm w-3/4">REGISTRARSE</button>
+                </article>
+                <article class="flex w-full flex-col items-center justify-center border-2">
+                    <p class="mb-2 text-sm">Si ya estás registrado:</p>
+                    <button class="btn btn-primary btn-sm w-3/4">INICIAR SESIÓN</button>
+                </article>
+            </section>
+            <footer class="h-[5%] w-full">
+                <p class="bg-gradient-to-r from-white via-slate-900 to-white text-center font-marca font-semibold text-orange-400">Φ IOSEPH Φ</p>
+            </footer>
+        </div>
+    </body>
+</html>
