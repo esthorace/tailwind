@@ -9,17 +9,18 @@
 
 @layer components {
     .btn {
-        @apply rounded-lg bg-gradient-to-r from-sky-600 via-sky-700 to-sky-600 p-2 text-center uppercase text-white shadow-inner shadow-cyan-300
-         hover:shadow-md hover:shadow-white  active:scale-90 active:transition-transform;
+        @apply rounded-lg bg-sky-600 p-2 text-center uppercase text-white 
+        hover:ring hover:ring-white active:scale-95 active:transition-transform;
     }
 
     .card {
-        @apply flex flex-col items-center justify-center gap-y-2 rounded-lg bg-sky-300/55 px-2 py-4 text-center shadow-sm shadow-gray-600;
+        @apply flex flex-col items-center justify-center gap-y-2 rounded-lg bg-sky-200 px-2 py-4 text-center;
     }
 }
 
-@layer utilities {
+/* @layer utilities {
     .bg-fondo {
-        @apply bg-gradient-to-r from-sky-700 from-10% via-sky-200 via-50% to-sky-700 to-90%;
-    }
-}
+        @apply bg-gradient-to-r from-sky-50 from-10% via-white via-50% to-sky-50 to-90%;
+    } 
+}¨
+*/
