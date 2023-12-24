@@ -3,9 +3,9 @@ module.exports = {
   content: ["./src/**/*.html"],
   theme: {
     extend: {
-      fontFamily: {
-        marca: ['CormorantGaramond', 'sans']
-      }
+      // fontFamily: {
+      //   marca: ['CormorantGaramond', 'sans']
+      // }
     },
   }
 }

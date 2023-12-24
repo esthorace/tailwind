@@ -3,48 +3,49 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>LOUKÁS</title>
+        <title>Salus App</title>
         <link rel="stylesheet" href="../dist/style.css" />
     </head>
 
     <body>
-        <div class="flex h-dvh select-none flex-col items-center px-2 *:overflow-hidden sm:gap-y-2 sm:px-4">
+        <div class="flex h-dvh select-none flex-col items-center px-4 *:overflow-hidden sm:gap-y-2 sm:px-4">
             <!-- Título -->
             <!-- <section class="flex h-[20%] w-full flex-col items-center justify-center pt-2 hover:scale-105 hover:transition-transform active:scale-95"> -->
-            <section class="flex h-[20%] w-full flex-col items-center justify-center pt-2 hover:scale-105 hover:transition-transform active:scale-95 sm:flex-row sm:pt-0">
-                <!-- <img src="logo-app.svg" alt="" class="mt-1 h-[65%]" /> -->
-                <img src="logo-app.svg" alt="logo" class="mt-1 h-[65%] sm:mr-3 sm:mt-0 sm:h-[100%]" />
-                <h1 class="h-[23%] text-center align-text-bottom font-marca text-2xl font-semibold tracking-widest sm:h-max">
-                    SALUS APP
-                    <p class="h-[12%] text-center align-text-top font-marca text-sm font-medium sm:h-max">SERVICIO A LA SALUD</p>
-                </h1>
+            <section class="flex h-[20%] w-full flex-col items-center justify-center hover:scale-95 hover:transition-transform active:scale-90 sm:flex-row sm:pt-0">
+                <div class="flex flex-col h-full items-center mt-2 w-full">
+                    <img src="logo-app.svg" alt="logo" class="h-4/6 w-full " />
+                    <!-- <p class="h-4/6 bg-red-400 w-full"></p> -->
+                    <p class="h-1/6 w-2/4 mt-2 flex justify-center items-end text-2xl font-serif font-medium tracking-wide">SALUS APP</p>
+                    <p class="h-1/6 w-2/4 -mt-2 flex justify-center items-start font-serif text-sm font-medium">SERVICIO A LA SALUD</p>
+                </div>
             </section>
             <!-- Tarjetas -->
-            <section class="sm-gap-y-0 flex h-[45%] w-full flex-col justify-center gap-y-3 *:py-3 sm:flex-row sm:items-center sm:gap-x-4 sm:gap-y-0 sm:*:py-1">
-                <article class="card sm:w-1/2 sm:gap-0 sm:p-1">
-                    <p>Soy un paciente, y necesito un turno con un profesional de la salud:</p>
-                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">solicitar turno</button>
+            <section class="flex h-[40%] w-full flex-col justify-center gap-y-3 sm:flex-row sm:items-center sm:gap-x-4 sm:gap-y-0 sm:*:py-1">
+                <article class="card h-[40%] py-1 sm:w-1/2 sm:gap-0 sm:p-0">
+                    <p>Necesito un turno con un profesional de la salud:</p>
+                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">Solicitar turno</button>
                 </article>
-                <article class="card sm:w-1/2 sm:gap-0 sm:p-0">
-                    <p>Soy profesional de la salud y quiero conocer el servicio o unirme a él:</p>
-                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">conocer el servicio</button>
+                <article class="card h-[40%] py-1 sm:w-1/2 sm:gap-0 sm:p-0">
+                    <p>Soy profesional de la salud y quiero conocer el servicio:</p>
+                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">Conocer el servicio</button>
                 </article>
             </section>
-            <div class="h-0.5 w-2/4 items-center justify-center self-center bg-gradient-to-r from-sky-200 via-sky-600 to-sky-200"></div>
-            <section class="sm-gap-y-0 flex h-[30%] w-full flex-col justify-center gap-y-3 *:py-3 sm:flex-row sm:items-center sm:gap-x-4 sm:gap-y-0 sm:*:py-1">
-                <article class="card sm:w-1/2 sm:gap-0 sm:px-0">
+            <!-- Login o Register -->
+            <div class="h-0.5 w-2/4 bg-gradient-to-r from-sky-200 via-sky-600 to-sky-200"></div>
+            <section class="flex h-[35%] w-full flex-col justify-center gap-y-3 *:py-3 sm:flex-row sm:items-center sm:gap-x-4 sm:gap-y-0 sm:*:py-1">
+                <article class="card h-[40%] sm:w-1/2 sm:gap-0 sm:px-0">
                     <p>Si eres profesional o paciente:</p>
-                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">registrarse</button>
+                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">Registrarse</button>
                 </article>
-                <article class="card sm:w-1/2 sm:gap-0 sm:py-0">
+                <article class="card h-[40%] sm:w-1/2 sm:gap-0 sm:py-0">
                     <p>Si ya estás registrado:</p>
-                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">iniciar sesión</button>
+                    <button class="btn w-3/4 sm:w-3/5 sm:p-1">Iniciar sesión</button>
                 </article>
             </section>
             <!-- Footer -->
             <footer class="h-max w-full">
                 <p
-                    class="bg-gradient-to-r from-transparent via-sky-950 to-transparent text-center font-marca font-normal tracking-widest text-orange-400 hover:scale-105 hover:transition-transform active:scale-95"
+                    class="bg-gradient-to-r from-transparent via-sky-950 to-transparent text-center font-serif font-normal tracking-widest text-orange-400 hover:scale-105 hover:transition-transform active:scale-95"
                 >
                     Φ IOSEPH Φ
                 </p>
