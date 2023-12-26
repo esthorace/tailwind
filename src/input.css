@@ -9,15 +9,19 @@
 
 @layer components {
     .btn {
-        @apply rounded-lg bg-sky-600 p-2 text-center uppercase text-white 
+        @apply w-3/4 rounded-lg p-2 text-center uppercase text-white 
         hover:ring-2 hover:ring-orange-400 active:scale-95 active:transition-transform text-lg font-normal
-        sm:text-base;
+        bg-gradient-to-b from-sky-500 from-5% via-sky-600 via-50% to-sky-500 to-95% 
+        border border-orange-400 shadow shadow-white
+        sm:w-full sm:text-xs;
     }
 
     .card {
-        @apply flex flex-col items-center justify-center gap-y-2 rounded-lg p-2 text-center text-lg font-normal
-        bg-gradient-to-tr from-sky-100 from-5% via-sky-200 via-50% to-sky-100 to-95% leading-tight
-        sm:text-base;
+        @apply w-full sm:w-1/4 sm:h-full p-4 sm:px-2
+        flex flex-col items-center justify-center gap-y-2
+        text-lg font-normal leading-tight text-center sm:text-xs
+        rounded-lg bg-gradient-to-tr from-sky-100 from-5% via-sky-200 via-50% to-sky-100 to-95%;
+         
     }
 }
 

@@ -8,29 +8,31 @@
     </head>
 
     <body>
-        <div class="h-dvh px-8 flex flex-col">
-            <img src="logo-app.svg" alt="logo" class="h-[20%] transition-transform hover:scale-95" />
-            <main class="h-[75%] w-full flex flex-col justify-evenly">
+        <div class="h-dvh px-6 flex flex-col sm:px-3">
+            <nav class="h-[20%] flex items-center justify-center sm:h-[35%]">
+                <img src="logo-app.svg" alt="logo" class="h-full mt-2 transition-transform hover:scale-105 active:scale-95" />
+            </nav>
+            <main class="h-[75%] w-full flex flex-col items-center justify-evenly sm:h-[60%] sm:flex-row sm:py-5 sm:gap-x-4">
                 <section class="card">
-                    <p>Necesito un turno con un profesional de la salud:</p>
-                    <button class="btn w-3/4">Solicitar turno</button>
+                    <p>Soy paciente</p>
+                    <button class="btn">Solicitar turno</button>
                 </section>
                 <section class="card">
-                    <p>Soy profesional de la salud y quiero conocer el servicio:</p>
-                    <button class="btn w-3/4">Conocer el servicio</button>
+                    <p class="flex flex-col justify-start">Soy profesional de la salud</p>
+                    <button class="btn">Conocer el servicio</button>
                 </section>
-                <div class="h-0.5 w-3/4 bg-gradient-to-r from-transparent via-orange-400 to-transparent self-center"></div>
-                <section class="card">
-                    <p>Si eres profesional o paciente:</p>
-                    <button class="btn w-3/4">Registrarse</button>
+                <hr class="h-0.5 w-3/4 bg-gradient-to-r sm:bg-gradient-to-b from-transparent via-orange-400 to-transparent self-center sm:w-0.5 sm:h-3/4"/>
+                <section class="card ">
+                    <p>Si eres profesional o paciente</p>
+                    <button class="btn ">Registrarse</button>
                 </section>
                 <section class="card">
-                    <p>Si ya estás registrado:</p>
-                    <button class="btn w-3/4">Iniciar sesión</button>
+                    <p>Si ya estás registrado</p>
+                    <button class="btn">Iniciar sesión</button>
                 </section>
             </main>
-            <footer class="h-[5%] w-full flex justify-center items-center bg-gradient-to-r from-transparent via-sky-900 to-transparent" >
-                <p class="font-serif font-normal tracking-widest text-orange-400 hover:scale-105 hover:transition-transform active:scale-95">
+            <footer class="h-[5%] sm:h-[7%] w-full flex justify-center items-center bg-gradient-to-r from-transparent via-sky-900 to-transparent" >
+                <p class="font-serif font-normal tracking-widest text-orange-400 hover:scale-105 hover:transition-transform active:scale-95 sm:text-xs">
                     Φ IOSEPH Φ
                 </p>
             </footer>
