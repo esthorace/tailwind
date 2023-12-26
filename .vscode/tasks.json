@@ -6,7 +6,7 @@
         {
             "label": "tailwind",
             "type": "shell",
-            "command": "npx tailwind -i ./src/input.css -o ./dist/style.css build --watch",
+            "command": "npx tailwind -i ./src/input.css -o ./src/style.css build --watch",
             "problemMatcher": []
         }
     ]

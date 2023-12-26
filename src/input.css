@@ -10,13 +10,14 @@
 @layer components {
     .btn {
         @apply rounded-lg bg-sky-600 p-2 text-center uppercase text-white 
-        hover:ring hover:ring-white active:scale-95 active:transition-transform text-lg font-normal;
+        hover:ring-2 hover:ring-orange-400 active:scale-95 active:transition-transform text-lg font-normal
+        sm:text-base;
     }
 
     .card {
         @apply flex flex-col items-center justify-center gap-y-2 rounded-lg p-2 text-center text-lg font-normal
-        bg-sky-200;
-        /* bg-gradient-to-tr from-sky-100 from-5% via-sky-200 via-50% to-sky-100 to-95% leading-tight; */
+        bg-gradient-to-tr from-sky-100 from-5% via-sky-200 via-50% to-sky-100 to-95% leading-tight
+        sm:text-base;
     }
 }
 
@@ -24,5 +25,4 @@
     .bg-fondo {
         @apply bg-gradient-to-r from-sky-50 from-10% via-white via-50% to-sky-50 to-90%;
     } 
-}¨
-*/
+} */

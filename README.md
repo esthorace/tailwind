@@ -86,7 +86,7 @@ Se puede instalar la extensión Prettier y para que cada vez que se guarde el ar
 
 # Script para Tailwind
 
-- `npx tailwind -i ./src/input.css -o ./dist/style.css build --watch`
+- `npx tailwind -i ./src/input.css -o ./src/style.css build --watch`
 
 # Script para Prettier
 
