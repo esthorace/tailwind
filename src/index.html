@@ -8,11 +8,11 @@
     </head>
 
     <body>
-        <div class="h-dvh px-6 flex flex-col sm:px-3">
-            <nav class="h-[20%] flex items-center justify-center sm:h-[35%]">
-                <img src="logo-app.svg" alt="logo" class="h-full mt-2 transition-transform hover:scale-105 active:scale-95" />
+        <div class="flex h-dvh flex-col px-6 sm:px-3">
+            <nav class="flex h-[20%] items-center justify-center sm:h-[35%]">
+                <img src="logo-app.svg" alt="logo" class="mt-2 h-full transition-transform hover:scale-105 active:scale-95" />
             </nav>
-            <main class="h-[75%] w-full flex flex-col items-center justify-evenly sm:h-[60%] sm:flex-row sm:py-5 sm:gap-x-4">
+            <main class="flex h-[75%] w-full flex-col items-center justify-evenly sm:h-[60%] sm:flex-row sm:gap-x-4 sm:py-5">
                 <section class="card">
                     <p>Soy paciente</p>
                     <button class="btn">Solicitar turno</button>
@@ -21,20 +21,18 @@
                     <p>Soy profesional de la salud</p>
                     <button class="btn">Conocer el servicio</button>
                 </section>
-                <hr class="h-0.5 w-3/4 bg-gradient-to-r sm:bg-gradient-to-b from-transparent via-orange-400 to-transparent self-center sm:w-0.5 sm:h-3/4"/>
-                <section class="card ">
+                <hr class="h-0.5 w-3/4 self-center bg-gradient-to-r from-transparent via-orange-400 to-transparent sm:h-3/4 sm:w-0.5 sm:bg-gradient-to-b" />
+                <section class="card">
                     <p>Si eres profesional o paciente</p>
-                    <button class="btn ">Registrarse</button>
+                    <button class="btn">Registrarse</button>
                 </section>
                 <section class="card">
                     <p>Si ya estás registrado</p>
                     <button class="btn">Iniciar sesión</button>
                 </section>
             </main>
-            <footer class="h-[5%] sm:h-[7%] w-full flex justify-center items-center bg-gradient-to-r from-transparent via-sky-900 to-transparent" >
-                <p class="font-serif font-normal tracking-widest text-orange-400 hover:scale-105 hover:transition-transform active:scale-95 sm:text-xs">
-                    Φ IOSEPH Φ
-                </p>
+            <footer class="flex h-[5%] w-full items-center justify-center bg-gradient-to-r from-transparent via-sky-900 to-transparent sm:h-[7%]">
+                <p class="font-serif font-normal tracking-widest text-orange-400 hover:scale-105 hover:transition-transform active:scale-95 sm:text-xs">Φ IOSEPH Φ</p>
             </footer>
         </div>
     </body>
