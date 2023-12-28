@@ -7,23 +7,26 @@
         @apply w-3/4 rounded-lg p-2 text-center uppercase text-white bg-sky-600
         hover:ring-2 hover:ring-orange-400 active:scale-95 active:transition-transform text-lg font-normal
         border border-orange-400 shadow shadow-white
-        sm:w-full sm:text-xs;
+        md:text-2xl
+        ;
     }
     
 
     .card.io {
-        @apply w-full sm:w-1/4 sm:h-full p-4 sm:px-2
+        @apply w-full p-4 md:w-3/4
         flex flex-col items-center justify-center gap-y-2
-        text-lg font-normal leading-tight text-center sm:text-xs
-        rounded-lg bg-gradient-to-tr from-sky-100 from-5% via-sky-200 via-50% to-sky-100 to-95%;
+        text-lg font-normal leading-tight text-center
+        rounded-lg bg-gradient-to-tr from-sky-100 from-5% via-sky-200 via-50% to-sky-100 to-95%
+        md:text-2xl
+        ;
          
     }
 
     .btn.skeleton {
-        @apply w-3/4 m-0 rounded-lg p-2 text-center uppercase text-white  bg-sky-600
+        @apply w-3/4 rounded-lg p-2 text-center uppercase text-white  bg-sky-600
         hover:ring-2 hover:ring-orange-400 active:scale-95 active:transition-transform text-lg font-normal
         border border-orange-400 shadow shadow-white
-        sm:w-full sm:text-xs;
+        md:text-2xl;
     }
     
     .skeleton.background {

@@ -1,39 +1,66 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Salus App</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
 
-    <body>
-        <div class="skeleton background flex h-dvh flex-col px-6 sm:px-3">
-            <nav class="flex h-[15%] items-center justify-center sm:h-[35%]">
-                <img src="logo-app.svg" alt="logo" class="mt-2 h-full transition-transform hover:scale-105 active:scale-95" />
-            </nav>
-            <main class="flex h-[80%] w-full flex-col items-center justify-evenly sm:h-[60%] sm:flex-row sm:gap-x-4 sm:py-5">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- htmx -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+    <title>Salus</title>
+</head>
+
+<body>
+    <div class="skeleton background flex h-dvh flex-col px-6 select-none">
+        <nav class="flex h-[15%] items-center justify-center">
+            <img src="logo-app.svg" alt="logo"
+                class="pt-2 h-full transition-transform hover:scale-105 active:scale-95" />
+        </nav>
+        <main class="flex h-[80%] w-full flex-col items-center justify-evenly">
+            <div class="flex flex-col w-full items-center gap-y-2 md:gap-y-10">
                 <section class="card io">
                     <p>¿Paciente?</p>
-                    <button class="btn skeleton">Solicitar turno</button>
+                    <button class="btn skeleton" x-data @click="alert('Característica aún no disponible')">
+                        Solicitar turno
+                    </button>
                 </section>
                 <section class="card io">
                     <p>¿Profesional de la salud?</p>
-                    <button class="btn btn-primary">Conocer la App</button>
+                    <button class="btn btn-primary py-4" x-data @click="alert('Característica aún no disponible')">
+                        Conocer la App
+                    </button>
                 </section>
-                <hr class="h-0.5 w-3/4 self-center bg-gradient-to-r from-transparent via-orange-400 to-transparent sm:h-3/4 sm:w-0.5 sm:bg-gradient-to-b" />
+            </div>
+            <!-- <hr class="h-0.5 w-3/4 self-center bg-gradient-to-r from-transparent via-orange-400 to-transparent md:h-3/4 md:w-0.5 md:bg-gradient-to-b" /> -->
+            <hr class="h-0.5 w-3/4 self-center bg-gradient-to-r from-transparent via-orange-400 to-transparent md:w-2/4" />
+            <div class="flex flex-col w-full items-center gap-y-2 md:gap-y-10">
                 <section class="card io">
                     <p>¿Quieres la App?</p>
-                    <button class="btn btn-primary">Registrarse</button>
+                    <button class="btn btn-primary" x-data @click="alert('Característica aún no disponible')">
+                        Registrarse
+                    </button>
                 </section>
                 <section class="card io">
                     <p>¿Ya estás registrado?</p>
-                    <button class="btn skeleton">Iniciar sesión</button>
+                    <button class="btn skeleton">
+                        Iniciar sesión
+                    </button>
                 </section>
-            </main>
-            <footer class="flex h-[5%] w-full items-center justify-center bg-gradient-to-r from-transparent via-sky-900 to-transparent sm:h-[7%]">
-                <p class="font-serif font-normal tracking-widest text-orange-400 hover:scale-105 hover:transition-transform active:scale-95 sm:text-xs">Φ IOSEPH Φ</p>
-            </footer>
-        </div>
-    </body>
+            </div>
+        </main>
+        <footer
+            class="flex h-[5%] w-full items-center justify-center bg-gradient-to-r from-transparent via-sky-900 to-transparent">
+            <p class="font-serif tracking-widest text-orange-400 
+                hover:scale-105 hover:transition-transform active:scale-95
+                md:text-2xl">
+                Φ IOSEPH Φ
+            </p>
+        </footer>
+    </div>
+</body>
+
 </html>
