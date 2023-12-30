@@ -6,19 +6,21 @@
     .mi-btn {
         @apply w-3/4 xl:w-2/6 p-2 md:p-4 xl:p-2 
         text-lg md:text-xl xl:text-base font-normal uppercase text-white 
-        bg-slate-600 rounded-lg border border-orange-400 shadow shadow-white
+        bg-[#117DCB]
+        rounded-lg border border-orange-400 shadow shadow-white
         hover:ring-2 hover:ring-orange-400 active:scale-95 active:transition-transform
+        /* bg-slate-600  */
         ;
     }
-    
 
     .mi-card {
         @apply flex flex-col w-full md:w-3/4 xl:w-3/6 
         p-3 md:p-2 xl:p-2 gap-2 md:gap-2 xl:gap-2 items-center justify-center 
-        text-lg md:text-xl xl:text-base font-normal md:font-medium text-black
-        rounded-lg md:rounded-xl bg-gradient-to-tr from-slate-200 from-10% via-slate-300 via-50% to-slate-200 to-90%
+        text-lg md:text-xl xl:text-base font-medium md:font-medium text-black
+        /* rounded-lg md:rounded-xl bg-gradient-to-tr from-slate-200 from-10% via-slate-300 via-50% to-slate-200 to-90% */
+        rounded-lg md:rounded-xl bg-gradient-to-tr from-[#CBE7FA] from-10% via-[#ACCFE8] via-50% to-[#CBE7FA] to-90%
         ;
-         
+        
     }
 
     .skeleton.background {
