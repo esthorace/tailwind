@@ -1030,11 +1030,6 @@ html {
   }
 }
 
-.skeleton.background {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
 .flex {
   display: flex;
 }
