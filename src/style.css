@@ -531,7 +531,7 @@ html {
   --nc: 0.894994 0.011585 252.096176;
   --b1: 1 0 0;
   --b2: 0.961151 0 0;
-  --b3: 0.936049 0.035076 237.549811;
+  --b3: 0.906701 0 0;
   --bc: 0.278078 0.029596 256.847952;
   base: #e4f4ff;
   --in: 0.721685 0.176688 305.503759;
@@ -600,7 +600,7 @@ html {
   --nc: 0.894994 0.011585 252.096176;
   --b1: 1 0 0;
   --b2: 0.961151 0 0;
-  --b3: 0.936049 0.035076 237.549811;
+  --b3: 0.906701 0 0;
   --bc: 0.278078 0.029596 256.847952;
   base: #e4f4ff;
   --in: 0.721685 0.176688 305.503759;
@@ -634,7 +634,7 @@ html {
   --nc: 0.894994 0.011585 252.096176;
   --b1: 1 0 0;
   --b2: 0.961151 0 0;
-  --b3: 0.936049 0.035076 237.549811;
+  --b3: 0.906701 0 0;
   --bc: 0.278078 0.029596 256.847952;
   base: #e4f4ff;
   --in: 0.721685 0.176688 305.503759;
@@ -1464,10 +1464,23 @@ html {
 
 .btn {
   width: 75%;
+  border-radius: 0.5rem;
+  background-color: var(--fallback-s,oklch(var(--s)/0.25));
   padding: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  font-weight: 500;
   text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #fff;
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .btn:hover {
@@ -1495,14 +1508,6 @@ html {
   }
 }
 
-/* .mi-btn {
-        @apply w-3/4 xl:w-2/6 p-2 md:p-3 xl:p-2 
-        text-lg md:text-xl xl:text-base font-normal uppercase text-white 
-        bg-[#117DCB]
-        rounded-lg border border-primary
-        hover:ring-2 hover:ring-primary active:scale-95 active:transition-transform
-    } */
-
 .mi-card {
   display: flex;
   width: 100%;
@@ -1511,14 +1516,17 @@ html {
   justify-content: center;
   gap: 0.5rem;
   border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
+  background-color: var(--fallback-s,oklch(var(--s)/0.55));
   padding: 0.75rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
+  letter-spacing: 0.025em;
   --tw-text-opacity: 1;
-  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 @media (min-width: 768px) {
@@ -1529,7 +1537,6 @@ html {
     padding: 2rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
-    font-weight: 500;
   }
 }
 
@@ -1649,13 +1656,13 @@ html {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
 }
 
 .pt-2 {

@@ -5,22 +5,19 @@
 @layer components {
     .btn {
         @apply w-3/4 xl:w-2/6 p-2 md:p-3 xl:p-2
-        text-lg md:text-xl xl:text-base
-        hover:ring-2 hover:ring-primary uppercase
+        text-lg md:text-xl xl:text-base 
+        text-base-content font-medium uppercase
+        rounded-lg
+        backdrop-blur-sm bg-secondary/25 shadow-inner shadow-white
+        hover:ring-2 hover:ring-primary 
     }
-
-    /* .mi-btn {
-        @apply w-3/4 xl:w-2/6 p-2 md:p-3 xl:p-2 
-        text-lg md:text-xl xl:text-base font-normal uppercase text-white 
-        bg-[#117DCB]
-        rounded-lg border border-primary
-        hover:ring-2 hover:ring-primary active:scale-95 active:transition-transform
-    } */
 
     .mi-card {
         @apply flex flex-col w-full md:w-3/4 xl:w-3/6 
         p-3 md:p-8 xl:p-2 gap-2 md:gap-2 xl:gap-2 items-center justify-center 
-        text-lg md:text-xl xl:text-base font-medium md:font-medium
-        rounded-lg md:rounded-xl text-base-content bg-base-300
+        text-lg md:text-xl xl:text-base 
+        text-white font-medium tracking-wide
+        rounded-lg md:rounded-xl 
+        backdrop-blur-sm bg-secondary/55
     }
 }
