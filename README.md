@@ -27,7 +27,7 @@ En tailwind.config.js:
 ```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.html"],
+  content: ["./docs/**/*.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -86,8 +86,8 @@ Se puede instalar la extensión Prettier y para que cada vez que se guarde el ar
 
 # Script para Tailwind
 
-npx tailwind -i ./src/input.css -o ./src/style.css build --watch
+npx tailwind -i ./docs/input.css -o ./docs/style.css build --watch
 
 # Script para Prettier
 
-npx prettier --write src/*.html
+npx prettier --write docs/*.html
